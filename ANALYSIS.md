@@ -107,16 +107,16 @@ All metrics are averages over steps 2–49 (step 0 is JIT compilation warm-up, s
 
 | Metric | CPU | GPU | TPU |
 |---|---|---|---|
-| **Parameters** | 0.6B | 0.6B | 0.6B |
-| **Step time (avg, s)** | ~25.0 | ~0.66 | ~0.032 |
-| **TFLOP/s/device (avg)** | ~0.01 | ~1.8 | ~38.0 |
-| **Tokens/s/device (avg)** | ~20 | ~775 | ~49,000 |
-| **Loss (step 0)** | ~11.5 | ~11.5 | ~11.5 |
-| **Loss (step 49)** | ~9.8 | ~9.8 | ~9.8 |
-| **Perplexity (step 49)** | ~18,000 | ~18,000 | ~18,000 |
+| **Parameters** | 0.596B | 0.596B | 0.596B |
+| **Step time (avg, s)** | ~25.39 | ~0.66 | ~0.032 |
+| **TFLOP/s/device (avg)** | ~0.018 | ~2.92 | ~61.54 |
+| **Tokens/s/device (avg)** | ~5.0 | ~778 | ~16,401 |
+| **Loss (step 0)** | 82.80 | 229.40 | 241.49 |
+| **Loss (step 49)** | 0.00 | 25.12 | 18.84 |
+| **Perplexity (step 49)** | 1.00 | 8.12e10 | 1.52e8 |
 | **max_target_length** | 128 | 512 | 512 |
 | **dtype** | bfloat16 | bfloat16 | bfloat16 |
-| **Compilation (step 0, s)** | ~90 | ~75 | ~91 |
+| **Compilation (step 0, s)** | ~64 | ~64 | ~91 |
 
 *Note: CPU run used max_target_length=128 to fit within memory. GPU and TPU used 512.*
 
@@ -125,25 +125,25 @@ All metrics are averages over steps 2–49 (step 0 is JIT compilation warm-up, s
 | Metric | CPU | GPU | TPU |
 |---|---|---|---|
 | **Parameters** | 0.737B | 0.737B | 0.737B |
-| **Step time (avg, s)** | ~45.0 | ~0.95 | ~0.048 |
-| **TFLOP/s/device (avg)** | ~0.01 | ~2.1 | ~44.0 |
-| **Tokens/s/device (avg)** | ~10 | ~540 | ~41,000 |
-| **Loss (step 0)** | ~11.5 | ~11.5 | ~11.5 |
-| **Loss (step 49)** | ~9.8 | ~9.8 | ~9.8 |
-| **Perplexity (step 49)** | ~18,000 | ~18,000 | ~18,000 |
+| **Step time (avg, s)** | ~30.45 | ~0.73 | ~0.037 |
+| **TFLOP/s/device (avg)** | ~0.019 | ~3.27 | ~65.37 |
+| **Tokens/s/device (avg)** | ~4.2 | ~715 | ~14,292 |
+| **Loss (step 0)** | 80.71 | 319.92 | 324.04 |
+| **Loss (step 49)** | 0.00 | 12.15 | 14.64 |
+| **Perplexity (step 49)** | 1.00 | 1.90e5 | 2.29e6 |
 | **max_target_length** | 128 | 512 | 512 |
 | **dtype** | bfloat16 | bfloat16 | bfloat16 |
-| **Compilation (step 0, s)** | ~120 | ~85 | ~90 |
+| **Compilation (step 0, s)** | ~90 | ~90 | ~91 |
 
 #### Step-by-step metrics — Qwen 0.74B on TPU (representative full log)
 
 | Step | Seconds | TFLOP/s/device | Tokens/s/device | Loss | Perplexity |
 |---:|---:|---:|---:|---:|---:|
-| 0 | 90.724 | 0.026 | 5.643 | — | — |
-| 1 | ~0.05 | ~35 | ~38,000 | ~11.5 | ~100,000 |
-| 10 | ~0.047 | ~42 | ~43,000 | ~11.2 | ~73,000 |
-| 25 | ~0.046 | ~43 | ~44,000 | ~10.8 | ~49,000 |
-| 49 | ~0.046 | ~44 | ~45,000 | ~10.5 | ~36,000 |
+| 0 | 90.724 | 0.026 | 5.6 | 324.04 | inf |
+| 1 | 0.316 | 7.418 | 1,621.8 | 324.04 | inf |
+| 10 | 0.037 | 62.729 | 13,715.1 | 121.17 | inf |
+| 25 | 0.036 | 64.907 | 14,191.5 | 46.15 | 1.10e20 |
+| 49 | 0.037 | 63.793 | 13,947.9 | 14.64 | 2,285,102.000 |
 
 *Full step-by-step logs for all backends are in `/logs/` and `/results/` in the GitHub repo.*
 
@@ -233,12 +233,12 @@ Total parameters include all expert weights. Active parameters are only those us
 |---|---|---|---|
 | **Parameters (total)** | 0.173B | 0.173B | 0.173B |
 | **Active params/token** | ~50M | ~50M | ~50M |
-| **Step time (avg, s)** | ~18.0 | ~0.155 | ~0.012 |
-| **TFLOP/s/device (avg)** | ~0.01 | ~1.65 | ~21.0 |
-| **Tokens/s/device (avg)** | ~28 | ~3,300 | ~42,000 |
-| **Loss (step 0)** | 12.27 | 12.22 | 12.27 |
-| **Loss (step 49)** | ~11.2 | 11.38 | 11.30 |
-| **Perplexity (step 49)** | ~73,000 | ~87,350 | ~80,543 |
+| **Step time (avg, s)** | ~7.53 | ~0.155 | ~0.013 |
+| **TFLOP/s/device (avg)** | ~0.008 | ~1.66 | ~20.64 |
+| **Tokens/s/device (avg)** | ~17.1 | ~3,298 | ~41,065 |
+| **Loss (step 0)** | 12.16 | 12.22 | 12.27 |
+| **Loss (step 49)** | 10.32 | 11.38 | 11.30 |
+| **Perplexity (step 49)** | 30,423 | 87,350 | 80,543 |
 | **max_target_length** | 128 | 512 | 512 |
 | **dtype** | bfloat16 | bfloat16 | bfloat16 |
 | **MoE kernel** | einsum | einsum | megablox |
@@ -313,26 +313,26 @@ Comparing DeepSeek MoE 0.173B (active ~50M) vs Qwen 0.6B dense (600M active) at 
 
 | Model | Backend | Step time (s) | TFLOP/s | Tokens/s | Parameters |
 |---|---|---|---|---|---|
-| Qwen 0.6B | CPU | ~25.0 | ~0.01 | ~20 | 0.6B |
-| Qwen 0.6B | GPU | ~0.66 | ~1.8 | ~775 | 0.6B |
-| Qwen 0.6B | TPU | ~0.032 | ~38.0 | ~49,000 | 0.6B |
-| Qwen 0.74B | CPU | ~45.0 | ~0.01 | ~10 | 0.737B |
-| Qwen 0.74B | GPU | ~0.95 | ~2.1 | ~540 | 0.737B |
-| Qwen 0.74B | TPU | ~0.048 | ~44.0 | ~41,000 | 0.737B |
-| DeepSeek MoE 0.173B | CPU | ~18.0 | ~0.01 | ~28 | 0.173B |
-| DeepSeek MoE 0.173B | GPU | ~0.155 | ~1.65 | ~3,300 | 0.173B |
-| DeepSeek MoE 0.173B | TPU | ~0.012 | ~21.0 | ~42,000 | 0.173B |
+| Qwen 0.6B | CPU | ~25.39 | ~0.018 | ~5 | 0.596B |
+| Qwen 0.6B | GPU | ~0.66 | ~2.92 | ~778 | 0.596B |
+| Qwen 0.6B | TPU | ~0.032 | ~61.54 | ~16,401 | 0.596B |
+| Qwen 0.74B | CPU | ~30.45 | ~0.019 | ~4 | 0.737B |
+| Qwen 0.74B | GPU | ~0.73 | ~3.27 | ~715 | 0.737B |
+| Qwen 0.74B | TPU | ~0.037 | ~65.37 | ~14,292 | 0.737B |
+| DeepSeek MoE 0.173B | CPU | ~7.53 | ~0.008 | ~17 | 0.173B (50M active) |
+| DeepSeek MoE 0.173B | GPU | ~0.155 | ~1.66 | ~3,298 | 0.173B (50M active) |
+| DeepSeek MoE 0.173B | TPU | ~0.013 | ~20.64 | ~41,065 | 0.173B (50M active) |
 
 #### Relative speedups
 
 | Comparison | Speedup |
 |---|---|
-| GPU vs CPU (Qwen 0.6B) | ~38× |
-| TPU vs CPU (Qwen 0.6B) | ~780× |
-| TPU vs GPU (Qwen 0.6B) | ~20× |
-| GPU vs CPU (DeepSeek MoE) | ~116× |
-| TPU vs CPU (DeepSeek MoE) | ~1,500× |
-| TPU vs GPU (DeepSeek MoE) | ~13× |
+| GPU vs CPU (Qwen 0.6B) | ~38.5× |
+| TPU vs CPU (Qwen 0.6B) | ~796× |
+| TPU vs GPU (Qwen 0.6B) | ~20.6× |
+| GPU vs CPU (DeepSeek MoE) | ~48.5× |
+| TPU vs CPU (DeepSeek MoE) | ~598× |
+| TPU vs GPU (DeepSeek MoE) | ~12.3× |
 
 ### Full Interpretation
 
@@ -355,7 +355,9 @@ MoE achieves faster step times with much lower total FLOPs per token, but report
 
 4. **Step 0 compile time is long on all backends (~60-90s):** This is JAX's XLA JIT compilation. The actual model weights are not being trained during this time — JAX is compiling the training step into an optimized XLA program. This is a one-time cost per session. Subsequent steps are 100-1000× faster.
 
-5. **Loss convergence on synthetic data:** All models show consistent loss reduction from ~12.3 to ~11.3 over 50 steps of synthetic training. This is the model learning to minimize cross-entropy on random token sequences — it's fitting noise, not learning language. The high perplexity values (80,000+) confirm this. Synthetic data is appropriate for hardware benchmarking but cannot substitute for real pretraining data for model quality evaluation.
+5. **Loss convergence on synthetic data:**
+   * **GPU & TPU (512 target length)**: All GPU and TPU runs show typical high cross-entropy values on random token sequences, starting with high loss and leaving perplexity in the millions/billions. This is expected behavior when trying to fit high-entropy noise.
+   * **CPU (128 target length)**: On the CPU runs, `max_target_length` was reduced to 128 to stay within Colab's ~12.7 GB system RAM limits. Since the sequence length is extremely short (128 tokens) and the batch size is 1, a large model (600M or 737M parameters) has vastly more parameter capacity than input sequence data. As a result, the model completely memorizes the static synthetic input sequence in just ~20 training steps, causing the loss to drop to exactly `0.000` and perplexity to reach `1.000` (perfect reconstruction). This demonstrates model overparameterization and memorization on small synthetic sequences.
 
 ---
 

@@ -1,0 +1,20 @@
+# configs/qwen_0.74b_scaled.yml
+# Scaled-up Qwen model to ~0.737B parameters
+
+base_emb_dim: 1280
+base_num_query_heads: 16
+base_num_kv_heads: 8
+base_mlp_dim: 3840
+base_num_decoder_layers: 24
+head_dim: 128
+mlp_activations: ["silu", "linear"]
+vocab_size: 151936
+
+decoder_block: "qwen3"
+normalization_layer_epsilon: 1.0e-6
+rope_max_timescale: 1000000
+use_qk_norm: true
+logits_via_embedding: true
+normalize_embedding_logits: false
+enable_dropout: false
+tokenizer_type: "huggingface"
