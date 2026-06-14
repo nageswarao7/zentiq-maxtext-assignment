@@ -1,0 +1,506 @@
+{
+  "model": "qwen3-0.6b",
+  "backend": "tpu",
+  "steps": [
+    {
+      "step": 0,
+      "seconds": 98.974,
+      "tflops_per_device": 0.019,
+      "tokens_per_sec": 5.173,
+      "total_weights": 512,
+      "loss": 241.492,
+      "lm_loss": 241.492,
+      "perplexity": "inf"
+    },
+    {
+      "step": 1,
+      "seconds": 0.333,
+      "tflops_per_device": 5.764,
+      "tokens_per_sec": 1536.31,
+      "total_weights": 512,
+      "loss": 241.492,
+      "lm_loss": 241.492,
+      "perplexity": "inf"
+    },
+    {
+      "step": 2,
+      "seconds": 0.013,
+      "tflops_per_device": 151.922,
+      "tokens_per_sec": 40490.312,
+      "total_weights": 512,
+      "loss": 238.362,
+      "lm_loss": 238.362,
+      "perplexity": "inf"
+    },
+    {
+      "step": 3,
+      "seconds": 0.03,
+      "tflops_per_device": 64.202,
+      "tokens_per_sec": 17111.156,
+      "total_weights": 512,
+      "loss": 225.303,
+      "lm_loss": 225.303,
+      "perplexity": "inf"
+    },
+    {
+      "step": 4,
+      "seconds": 0.031,
+      "tflops_per_device": 62.677,
+      "tokens_per_sec": 16704.731,
+      "total_weights": 512,
+      "loss": 188.25,
+      "lm_loss": 188.25,
+      "perplexity": "inf"
+    },
+    {
+      "step": 5,
+      "seconds": 0.032,
+      "tflops_per_device": 59.562,
+      "tokens_per_sec": 15874.492,
+      "total_weights": 512,
+      "loss": 158.761,
+      "lm_loss": 158.761,
+      "perplexity": "inf"
+    },
+    {
+      "step": 6,
+      "seconds": 0.032,
+      "tflops_per_device": 59.608,
+      "tokens_per_sec": 15886.807,
+      "total_weights": 512,
+      "loss": 142.745,
+      "lm_loss": 142.745,
+      "perplexity": "inf"
+    },
+    {
+      "step": 7,
+      "seconds": 0.033,
+      "tflops_per_device": 57.444,
+      "tokens_per_sec": 15310.089,
+      "total_weights": 512,
+      "loss": 132.919,
+      "lm_loss": 132.919,
+      "perplexity": "inf"
+    },
+    {
+      "step": 8,
+      "seconds": 0.032,
+      "tflops_per_device": 60.428,
+      "tokens_per_sec": 16105.187,
+      "total_weights": 512,
+      "loss": 125.156,
+      "lm_loss": 125.156,
+      "perplexity": "inf"
+    },
+    {
+      "step": 9,
+      "seconds": 0.032,
+      "tflops_per_device": 59.898,
+      "tokens_per_sec": 15964.081,
+      "total_weights": 512,
+      "loss": 118.507,
+      "lm_loss": 118.507,
+      "perplexity": "inf"
+    },
+    {
+      "step": 10,
+      "seconds": 0.032,
+      "tflops_per_device": 59.751,
+      "tokens_per_sec": 15924.855,
+      "total_weights": 512,
+      "loss": 112.732,
+      "lm_loss": 112.732,
+      "perplexity": "inf"
+    },
+    {
+      "step": 11,
+      "seconds": 0.033,
+      "tflops_per_device": 58.966,
+      "tokens_per_sec": 15715.645,
+      "total_weights": 512,
+      "loss": 107.316,
+      "lm_loss": 107.316,
+      "perplexity": "inf"
+    },
+    {
+      "step": 12,
+      "seconds": 0.033,
+      "tflops_per_device": 58.354,
+      "tokens_per_sec": 15552.383,
+      "total_weights": 512,
+      "loss": 102.301,
+      "lm_loss": 102.301,
+      "perplexity": "inf"
+    },
+    {
+      "step": 13,
+      "seconds": 0.032,
+      "tflops_per_device": 60.189,
+      "tokens_per_sec": 16041.608,
+      "total_weights": 512,
+      "loss": 97.57,
+      "lm_loss": 97.57,
+      "perplexity": "inf"
+    },
+    {
+      "step": 14,
+      "seconds": 0.032,
+      "tflops_per_device": 59.605,
+      "tokens_per_sec": 15885.821,
+      "total_weights": 512,
+      "loss": 93.026,
+      "lm_loss": 93.026,
+      "perplexity": "inf"
+    },
+    {
+      "step": 15,
+      "seconds": 0.032,
+      "tflops_per_device": 59.677,
+      "tokens_per_sec": 15905.067,
+      "total_weights": 512,
+      "loss": 88.78,
+      "lm_loss": 88.78,
+      "perplexity": "inf"
+    },
+    {
+      "step": 16,
+      "seconds": 0.033,
+      "tflops_per_device": 57.949,
+      "tokens_per_sec": 15444.481,
+      "total_weights": 512,
+      "loss": 84.565,
+      "lm_loss": 84.565,
+      "perplexity": "5322575846021483220581115511042998272.000"
+    },
+    {
+      "step": 17,
+      "seconds": 0.032,
+      "tflops_per_device": 59.459,
+      "tokens_per_sec": 15846.978,
+      "total_weights": 512,
+      "loss": 80.358,
+      "lm_loss": 80.358,
+      "perplexity": "79294045683155105531774081727201280.000"
+    },
+    {
+      "step": 18,
+      "seconds": 0.032,
+      "tflops_per_device": 60.895,
+      "tokens_per_sec": 16229.752,
+      "total_weights": 512,
+      "loss": 76.208,
+      "lm_loss": 76.208,
+      "perplexity": "1248909812829750306196341269725184.000"
+    },
+    {
+      "step": 19,
+      "seconds": 0.033,
+      "tflops_per_device": 58.959,
+      "tokens_per_sec": 15713.716,
+      "total_weights": 512,
+      "loss": 72.142,
+      "lm_loss": 72.142,
+      "perplexity": "21426384674681684031613163274240.000"
+    },
+    {
+      "step": 20,
+      "seconds": 0.033,
+      "tflops_per_device": 58.499,
+      "tokens_per_sec": 15591.218,
+      "total_weights": 512,
+      "loss": 68.054,
+      "lm_loss": 68.054,
+      "perplexity": "359353993238017644281806716928.000"
+    },
+    {
+      "step": 21,
+      "seconds": 0.032,
+      "tflops_per_device": 60.672,
+      "tokens_per_sec": 16170.293,
+      "total_weights": 512,
+      "loss": 63.89,
+      "lm_loss": 63.89,
+      "perplexity": "5587837539664216885538324480.000"
+    },
+    {
+      "step": 22,
+      "seconds": 0.033,
+      "tflops_per_device": 58.928,
+      "tokens_per_sec": 15705.521,
+      "total_weights": 512,
+      "loss": 59.852,
+      "lm_loss": 59.852,
+      "perplexity": "98459229015635662961901568.000"
+    },
+    {
+      "step": 23,
+      "seconds": 0.032,
+      "tflops_per_device": 60.286,
+      "tokens_per_sec": 16067.282,
+      "total_weights": 512,
+      "loss": 55.699,
+      "lm_loss": 55.699,
+      "perplexity": "1548171963538877366403072.000"
+    },
+    {
+      "step": 24,
+      "seconds": 0.034,
+      "tflops_per_device": 57.215,
+      "tokens_per_sec": 15248.987,
+      "total_weights": 512,
+      "loss": 51.639,
+      "lm_loss": 51.639,
+      "perplexity": "26690416558425031835648.000"
+    },
+    {
+      "step": 25,
+      "seconds": 0.031,
+      "tflops_per_device": 61.715,
+      "tokens_per_sec": 16448.214,
+      "total_weights": 512,
+      "loss": 47.692,
+      "lm_loss": 47.692,
+      "perplexity": "515707474805172207616.000"
+    },
+    {
+      "step": 26,
+      "seconds": 0.033,
+      "tflops_per_device": 57.729,
+      "tokens_per_sec": 15386.002,
+      "total_weights": 512,
+      "loss": 43.891,
+      "lm_loss": 43.891,
+      "perplexity": "11518796073883664384.000"
+    },
+    {
+      "step": 27,
+      "seconds": 0.031,
+      "tflops_per_device": 61.137,
+      "tokens_per_sec": 16294.316,
+      "total_weights": 512,
+      "loss": 40.429,
+      "lm_loss": 40.429,
+      "perplexity": "361332300077596672.000"
+    },
+    {
+      "step": 28,
+      "seconds": 0.033,
+      "tflops_per_device": 58.101,
+      "tokens_per_sec": 15485.12,
+      "total_weights": 512,
+      "loss": 37.388,
+      "lm_loss": 37.388,
+      "perplexity": "17275062839148544.000"
+    },
+    {
+      "step": 29,
+      "seconds": 0.032,
+      "tflops_per_device": 59.429,
+      "tokens_per_sec": 15839.134,
+      "total_weights": 512,
+      "loss": 34.89,
+      "lm_loss": 34.89,
+      "perplexity": "1420765517840384.000"
+    },
+    {
+      "step": 30,
+      "seconds": 0.032,
+      "tflops_per_device": 60.72,
+      "tokens_per_sec": 16183.071,
+      "total_weights": 512,
+      "loss": 33.035,
+      "lm_loss": 33.035,
+      "perplexity": "222241522450432.000"
+    },
+    {
+      "step": 31,
+      "seconds": 0.034,
+      "tflops_per_device": 56.455,
+      "tokens_per_sec": 15046.432,
+      "total_weights": 512,
+      "loss": 31.243,
+      "lm_loss": 31.243,
+      "perplexity": "37042981437440.000"
+    },
+    {
+      "step": 32,
+      "seconds": 0.036,
+      "tflops_per_device": 53.08,
+      "tokens_per_sec": 14146.773,
+      "total_weights": 512,
+      "loss": 29.483,
+      "lm_loss": 29.483,
+      "perplexity": "6372744757248.000"
+    },
+    {
+      "step": 33,
+      "seconds": 0.03,
+      "tflops_per_device": 64.534,
+      "tokens_per_sec": 17199.678,
+      "total_weights": 512,
+      "loss": 27.854,
+      "lm_loss": 27.854,
+      "perplexity": "1249435058176.000"
+    },
+    {
+      "step": 34,
+      "seconds": 0.033,
+      "tflops_per_device": 58.514,
+      "tokens_per_sec": 15595.017,
+      "total_weights": 512,
+      "loss": 26.424,
+      "lm_loss": 26.424,
+      "perplexity": "299189600256.000"
+    },
+    {
+      "step": 35,
+      "seconds": 0.03,
+      "tflops_per_device": 64.353,
+      "tokens_per_sec": 17151.28,
+      "total_weights": 512,
+      "loss": 25.055,
+      "lm_loss": 25.055,
+      "perplexity": "76099297280.000"
+    },
+    {
+      "step": 36,
+      "seconds": 0.033,
+      "tflops_per_device": 58.685,
+      "tokens_per_sec": 15640.751,
+      "total_weights": 512,
+      "loss": 23.792,
+      "lm_loss": 23.792,
+      "perplexity": "21523597312.000"
+    },
+    {
+      "step": 37,
+      "seconds": 0.031,
+      "tflops_per_device": 61.741,
+      "tokens_per_sec": 16455.086,
+      "total_weights": 512,
+      "loss": 22.725,
+      "lm_loss": 22.725,
+      "perplexity": "7398393344.000"
+    },
+    {
+      "step": 38,
+      "seconds": 0.033,
+      "tflops_per_device": 59.03,
+      "tokens_per_sec": 15732.547,
+      "total_weights": 512,
+      "loss": 21.942,
+      "lm_loss": 21.942,
+      "perplexity": "3384215808.000"
+    },
+    {
+      "step": 39,
+      "seconds": 0.032,
+      "tflops_per_device": 59.354,
+      "tokens_per_sec": 15819.069,
+      "total_weights": 512,
+      "loss": 21.473,
+      "lm_loss": 21.473,
+      "perplexity": "2115738496.000"
+    },
+    {
+      "step": 40,
+      "seconds": 0.033,
+      "tflops_per_device": 58.944,
+      "tokens_per_sec": 15709.859,
+      "total_weights": 512,
+      "loss": 21.017,
+      "lm_loss": 21.017,
+      "perplexity": "1341836672.000"
+    },
+    {
+      "step": 41,
+      "seconds": 0.032,
+      "tflops_per_device": 59.516,
+      "tokens_per_sec": 15862.197,
+      "total_weights": 512,
+      "loss": 20.622,
+      "lm_loss": 20.622,
+      "perplexity": "903387584.000"
+    },
+    {
+      "step": 42,
+      "seconds": 0.032,
+      "tflops_per_device": 59.694,
+      "tokens_per_sec": 15909.515,
+      "total_weights": 512,
+      "loss": 20.244,
+      "lm_loss": 20.244,
+      "perplexity": "619261120.000"
+    },
+    {
+      "step": 43,
+      "seconds": 0.034,
+      "tflops_per_device": 56.829,
+      "tokens_per_sec": 15146.137,
+      "total_weights": 512,
+      "loss": 19.896,
+      "lm_loss": 19.896,
+      "perplexity": "437312800.000"
+    },
+    {
+      "step": 44,
+      "seconds": 0.032,
+      "tflops_per_device": 59.202,
+      "tokens_per_sec": 15778.606,
+      "total_weights": 512,
+      "loss": 19.577,
+      "lm_loss": 19.577,
+      "perplexity": "317876576.000"
+    },
+    {
+      "step": 45,
+      "seconds": 0.031,
+      "tflops_per_device": 62.749,
+      "tokens_per_sec": 16723.828,
+      "total_weights": 512,
+      "loss": 19.362,
+      "lm_loss": 19.362,
+      "perplexity": "256233696.000"
+    },
+    {
+      "step": 46,
+      "seconds": 0.033,
+      "tflops_per_device": 58.944,
+      "tokens_per_sec": 15709.859,
+      "total_weights": 512,
+      "loss": 19.197,
+      "lm_loss": 19.197,
+      "perplexity": "217259408.000"
+    },
+    {
+      "step": 47,
+      "seconds": 0.033,
+      "tflops_per_device": 58.057,
+      "tokens_per_sec": 15473.42,
+      "total_weights": 512,
+      "loss": 19.095,
+      "lm_loss": 19.095,
+      "perplexity": "196269248.000"
+    },
+    {
+      "step": 48,
+      "seconds": 0.032,
+      "tflops_per_device": 59.686,
+      "tokens_per_sec": 15907.537,
+      "total_weights": 512,
+      "loss": 18.98,
+      "lm_loss": 18.98,
+      "perplexity": "174951680.000"
+    },
+    {
+      "step": 49,
+      "seconds": 0.032,
+      "tflops_per_device": 60.375,
+      "tokens_per_sec": 16091.015,
+      "total_weights": 512,
+      "loss": 18.836,
+      "lm_loss": 18.836,
+      "perplexity": "151552144.000"
+    }
+  ]
+}
